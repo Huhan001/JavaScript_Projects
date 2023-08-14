@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    background-image: linear-gradient(lightgoldenrodyellow,lightblue);
+    background-image: linear-gradient(darkgoldenrod,lightgoldenrodyellow);
     min-height: 100dvh;
     color: black;
     font-family: Menlo;
