@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    
+        <!--this tells the webpade to operate with accordance to the devices view-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">-->
+    
+        <!--have a tittle included within-->
+        <title>Qoute Generator</title>
+        
+        <!--link the files-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+        
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+    </head>
+    
+    <body>
+        <div class="container" id="qoute-container">
+        <!--  qoute -->
+            <div class="qoute-text">
+                <!--<i class="fas fa-qoute-left"></i>-->
+                <img class="qoutation-image" src="https://www.seekpng.com/png/full/73-739253_quote-mark-png-transparent-background-quotation-marks.png">
+                <span id="qoute"></span>
+                <img class ="qoutation-image" src="https://www.pngmart.com/files/8/Quotation-Mark-Transparent-Images-PNG.png">
+            </div>
+            
+            <!--author element-->
+            <div class="qoute-author">
+                <span id="author"></span>
+            </div>
+            
+            <!--buttons-->
+            <div class="buttons-container">
+                <button type="button" class="btn btn-dark" id='twitter'>X Tweet</button>
+                <button type="button" class="btn btn-info" id='newqoute'>New Qoute</button>
+            </div>
+        </div>
+        
+        <!--loaderxx-->
+        <div id="loader" class="spinner-border text-light" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
+    
+    <script src="system.js"></script>
+    </body>
+
+</html>

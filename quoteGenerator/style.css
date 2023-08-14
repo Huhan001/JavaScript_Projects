@@ -1,0 +1,75 @@
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(lightgoldenrodyellow,lightblue);
+    min-height: 100dvh;
+    color: black;
+    font-family: Menlo;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qoutation-image {
+    width: 20px;
+    height: 20px;
+}
+
+.container {
+    width: auto;
+    max-width: 900px;
+   padding: 30px 35px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.2);
+    box-shadow: 0 10px 10px 10px rgba(0,0,0,0.1);
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#qoute {
+    font-size: 20px;
+}
+
+.qoute-author {
+    display: flex;
+    font-family: "American Typewriter";
+    font-size: 20px;
+    
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 370px;
+}
+
+.buttons-container {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    gap: 300px;
+}
+
+button:active {
+    box-shadow: 0 5px 5px 5px rgba(0,0,0,0.05);
+    filter: brightness(110%);
+}
+
+
+
+/*media query*/
+@media screen and (max-width: 1000px) {
+    .container {
+        margin: auto 10px;
+    }
+    
+    .qoute-text {
+        font-size: 1.5rem;
+    }
+}
+
