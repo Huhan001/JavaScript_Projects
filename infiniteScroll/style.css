@@ -1,0 +1,43 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    font-family: Menlo;
+}
+
+h1 {
+    letter-spacing: 3px;
+}
+
+.spinner-border {
+    margin-top: 25%
+}
+
+.image-container {
+    margin: 10px 30%;
+}
+
+.image-container img {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/*media query for large smartphone*/
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 18px;
+    }
+    .image-container {
+        margin: 10px 30%;
+    }
+    .image-container img {
+        width: 100%;
+    }
+}
