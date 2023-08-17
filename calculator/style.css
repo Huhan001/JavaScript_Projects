@@ -1,0 +1,108 @@
+html {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(cornflowerblue,floralwhite);
+    min-height: 99vh;
+/*    this puts the page vertically and horizontally*/
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+/*    all you need to position things in the center*/
+}
+
+.calculator {
+/*    editing the main container*/
+    background-color: rgba(255,255,255,0.5);
+    width: 450px;
+    border-radius: 12px;
+    box-shadow: 0 5px 30px -5px;
+}
+
+/*display*/
+
+.calculator-display {
+    background: #454F75;
+    color: white;
+    margin: 0;
+    
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+    border-radius: 10px 10px 0 0;
+}
+
+.calculator-display h1 {
+    margin: 0;
+    padding: 25px;
+    font-family: Menlo;
+    font-size: 45px;
+    font-weight: 100;
+    overflow-x: auto;
+}
+
+/*buttons*/
+
+.calculator-button {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+#equal-button {
+    grid-column: -2;
+    grid-row: 2/6;
+}
+
+button{
+    min-height: 50px;
+    font-size: 24px;
+    font-weight: 300;
+    color: white;
+    
+    border: none;
+    border-radius: 5px;
+    
+    cursor: pointer;
+    background: #F28C41;
+}
+
+.operator, #equal-button {
+    background: #20475B;
+    color: white;
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.clear-btn {
+    background: #934C4C;
+}
+
+.decimal {
+    font-size: 25px;
+    font-weight: 800;
+}
+
+/*adding interaction*/
+button:active {
+    transform: translateY(2px);
+    color: #BCDBC9;
+}
+
+button:hover {
+    filter: brightness(110%);
+}
+
+button:focus {
+    outline: none;
+}
+
+@media screen and (max-device-width: 600px) {
+    .calculator {
+        width: 95%;
+    }
+}
